@@ -1,181 +1,235 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1 shrink-to-fit=no"
+    />
+    <title>webpack-sample</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1 shrink-to-fit=no">
-  <title>webpack-sample</title>
-</head>
-
-<body>
-  <div class="layout">
-    <main>
-      <div class="language">
-        <div class="activLang">
-          <h3 class="sdc">Язык</h3>
-          <img src="./images/icon-down.png" alt="">
+  <body>
+    <div class="layout">
+      <main>
+        <div class="language">
+          <div class="activLang">
+            <h3 class="sdc">Язык</h3>
+            <img src="./images/icon-down.png" alt="" />
+          </div>
+          <div class="ozerLang">
+            <div><a class="rusLang" href="">Русский</a></div>
+            <div>
+              <a
+                class="engLang"
+                href="https://yurii-donnikov.github.io/resume_eng/"
+                >English</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="ozerLang">
-          <div><a class="rusLang" href="">Русский</a></div>
-          <div><a class="engLang" href="https://yurii-donnikov.github.io/resume_eng/">English</a></div>
+        <div id="sidebar">
+          <section class="logo">
+            <div>
+              <img src="./images/photo-logo.jpg" alt="" />
+              <h1>Донников Юрий</h1>
+              <p>Frontend-разработчик</p>
+            </div>
+          </section>
+          <section class="contact">
+            <h2 class="acc-head">КОНТАКТЫ</h2>
+            <div class="acc-body">
+              <div>
+                <img src="./images/icon-tel.png" alt="" />
+                <p>
+                  <a style="color: #000" href="tel:+380661647025"
+                    >+380(66)1647025</a
+                  >
+                </p>
+              </div>
+              <div>
+                <img src="./images/icon-mess.png" alt="" />
+                <p>
+                  <a style="color: #000" href="mailto:donnikov01@gmail.com"
+                    >donnikov01@gmail.com</a
+                  >
+                </p>
+              </div>
+              <div>
+                <img src="./images/icon-map.png" alt="" />
+                <p>Харьков</p>
+              </div>
+            </div>
+          </section>
+          <section class="personal">
+            <h2 class="acc-head">ОБЩИЕ СВЕДЕНИЯ</h2>
+            <div class="acc-body">
+              <p>День рождения: 19.08.1997</p>
+              <p>Семейный статус: не женат</p>
+              <p>Национальность: украинец</p>
+              <p>Язык: русский, английский (чтение документации)</p>
+            </div>
+          </section>
+          <section class="interests">
+            <h2 class="acc-head">ИНТЕРЕСЫ</h2>
+            <div class="acc-body">
+              <div>
+                <img src="./images/icon-mac.png" alt="" />
+                <p>программирование</p>
+              </div>
+              <div>
+                <img src="./images/icon-sport.png" alt="" />
+                <p>спорт</p>
+              </div>
+              <div>
+                <img src="./images/icon-book.png" alt="" />
+                <p>чтение</p>
+              </div>
+              <div>
+                <img src="./images/icon-film.png" alt="" />
+                <p>фильмография</p>
+              </div>
+            </div>
+          </section>
+          <section class="connect">
+            <h2 class="acc-head">СОЦИАЛЬНЫЕ СЕТИ</h2>
+            <div class="acc-body">
+              <a target="_blank" href="https://www.instagram.com/donnykov007/"
+                ><img src="./images/icon-inst.png" alt="" />
+                <p>donnykov007</p>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/donnikrvav"
+                ><img src="./images/icon-fbk.png" alt="" />
+                <p>donnikrvav</p>
+              </a>
+              <a target="_blank" href="https://github.com/yurii-donnikov"
+                ><img src="./images/icon-git.png" alt="" />
+                <p>yurii-donnikov</p>
+              </a>
+            </div>
+          </section>
         </div>
-      </div>
-      <div id="sidebar">
-        <section class="logo">
-          <div>
-            <img src="./images/photo-logo.jpg" alt="">
-            <h1>Донников Юрий</h1>
-            <p>Frontend-разработчик</p>
-          </div>
-        </section>
-        <section class="contact">
-          <h2 class="acc-head">КОНТАКТЫ</h2>
-          <div class="acc-body">
+        <div id="content">
+          <section class="education">
+            <h2 class="">ОБРАЗОВАНИЕ</h2>
             <div>
-              <img src="./images/icon-tel.png" alt="">
-              <p><a style="color:#000" href="tel:+380661647025">+380(66)1647025</a></p>
-            </div>
-            <div>
-              <img src="./images/icon-mess.png" alt="">
-              <p><a style="color:#000" href="mailto:donnikov01@gmail.com">donnikov01@gmail.com</a></p>
-            </div>
-            <div>
-              <img src="./images/icon-map.png" alt="">
-              <p>Харьков</p>
-            </div>
-          </div>
-        </section>
-        <section class="personal">
-          <h2 class="acc-head">ОБЩИЕ СВЕДЕНИЯ</h2>
-          <div class="acc-body">
-            <p>День рождения: 19.08.1997</p>
-            <p>Семейный статус: не женат</p>
-            <p>Национальность: украинец</p>
-            <p>Язык: украинский,русский, английский </p>
-          </div>
-        </section>
-        <section class="interests">
-          <h2 class="acc-head">ИНТЕРЕСЫ</h2>
-          <div class="acc-body">
-            <div>
-              <img src="./images/icon-mac.png" alt="">
-              <p>программирование</p>
-            </div>
-            <div>
-              <img src="./images/icon-sport.png" alt="">
-              <p>спорт</p>
-            </div>
-            <div>
-              <img src="./images/icon-book.png" alt="">
-              <p>чтение</p>
-            </div>
-            <div>
-              <img src="./images/icon-film.png" alt="">
-              <p>фильмография</p>
-            </div>
-          </div>
-        </section>
-        <section class="connect">
-          <h2 class="acc-head">СОЦИАЛЬНЫЕ СЕТИ</h2>
-          <div class="acc-body">
-            <a target="_blank" href="https://www.instagram.com/donnikov01/"><img src="./images/icon-inst.png" alt="">
-              <p>donnikov01</p>
-            </a>
-            <a target="_blank" href="https://www.facebook.com/donnikrvav"><img src="./images/icon-fbk.png" alt="">
-              <p>donnikrvav</p>
-            </a>
-            <a target="_blank" href="https://github.com/yurii-donnikov"><img src="./images/icon-git.png" alt="">
-              <p>yurii-donnikov</p>
-            </a>
-          </div>
-        </section>
-      </div>
-      <div id="content">
-        <section class="education">
-          <h2 class="">ОБРАЗОВАНИЕ</h2>
-          <div>
-            <div class="divInEduc">
-              <p>2014 - 2019</p>
-            </div>
-            <h3>Харьковский Национальный университет строительства и архитектуры
-              <p>Автоматизация и компьютерные технологии</p>
-            </h3>
-          </div>
-          <div>
-            <div class="divInEduc">
-              <p>2019 - 2020</p>
-            </div>
-            <h3>Source iT — iT-курсы в Харькове
-              <p>Верстка (HTML+CSS)</p>
-            </h3>
-          </div>
-          <div>
-            <div class="divInEduc">
-              <p>2020 - 2021</p>
-            </div>
-            <h3>
-              Ukrainian IT School
-              <p>JavaScript (front end)</p>
-            </h3>
-          </div>
-        </section>
-        <section class="experienceWork">
-          <h2>ОПЫТ РАБОТЫ</h2>
-          <div>
-            <div class="divInEduc">
-              <p>2021 - &#8734;</p>
-            </div>
-            <h3>Aweb systems
-              <p style="font-weight: 100;">Контент менеджер (верстальщик)</p>
-            </h3>
-          </div>
-        </section>
-        <section class="mySkill">
-          <h3>ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ</h3>
-          <div class="programs">
-            <div class="progName">
-              <p>Photoshop</p>
-              <p>HTML 5</p>
-              <p>CSS 3</p>
-              <p>JavaScript</p>
-            </div>
-            <div class="progSkill">
-              <div>
-                <div class="photoshopSkill"></div>
-                <p class=" skillProcentPh"></p>
+              <div class="divInEduc">
+                <p>2014 - 2019</p>
               </div>
-              <div>
-                <div class="htmlSkill "></div>
-                <p class=" skillProcentHtml"></p>
+              <h3>
+                Харьковский Национальный университет строительства и архитектуры
+                <p>Автоматизация и компьютерные технологии</p>
+              </h3>
+            </div>
+            <div>
+              <div class="divInEduc">
+                <p>2019 - 2020</p>
               </div>
-              <div>
-                <div class="cssSkill "></div>
-                <p class=" skillProcentCss"></p>
+              <h3>
+                Source iT — iT-курсы в Харькове
+                <p>Верстка (HTML+CSS)</p>
+              </h3>
+            </div>
+            <div>
+              <div class="divInEduc">
+                <p>2020 - 2021</p>
               </div>
-              <div>
-                <div class="jsSkill "></div>
-                <p class=" skillProcentJs"></p>
+              <h3>
+                Ukrainian IT School
+                <p>JavaScript (front end)</p>
+              </h3>
+            </div>
+          </section>
+          <section class="experienceWork">
+            <h2>ОПЫТ РАБОТЫ</h2>
+            <div>
+              <div class="divInEduc">
+                <p>2021 - &#8734;</p>
+              </div>
+              <h3>
+                Aweb systems
+                <p style="font-weight: 100">Контент менеджер (верстальщик)</p>
+              </h3>
+            </div>
+          </section>
+          <section class="mySkill">
+            <h3>ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ</h3>
+            <div class="programs">
+              <div class="progName">
+                <p>HTML 5</p>
+                <p>JavaScript</p>
+                <p>React</p>
+                <p>Git</p>
+              </div>
+              <div class="progSkill">
+                <div>
+                  <div class="photoshopSkill"></div>
+                  <p class="skillProcentPh"></p>
+                </div>
+                <div>
+                  <div class="htmlSkill"></div>
+                  <p class="skillProcentHtml"></p>
+                </div>
+                <div>
+                  <div class="cssSkill"></div>
+                  <p class="skillProcentCss"></p>
+                </div>
+                <div>
+                  <div class="jsSkill"></div>
+                  <p class="skillProcentJs"></p>
+                </div>
               </div>
             </div>
-          </div>
-          <p class="andProg">Так же владею и активно использую такие навыки: графические редакторы Avocode и Figma, Препроцессор Sass, библиотека Bootstrap, CSS grid, сборщик модулей webpack, Git, библиотека jQuery, CMS WordPress</p>
-        </section>
-        <section class="myWorking">
-          <h2>МОИ ПРОЕКТЫ</h2>
-          <div>
-            <a target="_blank" href="https://yurii-donnikov.github.io/HouseVop_project/"><img src="./images/project_HouseVop.png" alt=""></a>
-            <a target="_blank" href="https://yurii-donnikov.github.io/project_construct/"><img src="./images/project_construct.png" alt=""></a>   
-            <a target="_blank" href="https://yurii-donnikov.github.io/BarbershopMain/"><img src="./images/work1.png" alt=""></a>
-            <a target="_blank" href="https://yurii-donnikov.github.io/PhotoStudio/"><img src="./images/photoStudio.png" alt=""></a>
-            
-                     
-            
-          </div>
-        </section>
-      </div>
-    </main>
-  </div>
-  <script src="./dist/main.js"></script>
-</body>
-
+            <p class="andProg">
+              Понимание что такое алгоритм, блок-схемы. Грамотное применение
+              верстки html, css, scss. Понимание работы с git, .gitignore.
+              Написание скриптов на Typescript. Сборщики проектов: gulp,
+              webpack. Знание linux (Основных команд). Работа с npm/yarn и их
+              команды. Понимание принципа виртуализации, и основных возможностей
+              docker. Опыт работы над проектом в небольшой команде 2-4 человек.
+            </p>
+          </section>
+          <section class="myWorking">
+            <h2>МОИ ПРОЕКТЫ</h2>
+            <div>
+              <a
+                target="_blank"
+                href="https://yurii-donnikov.github.io/HouseVop_project/"
+                ><img src="./images/project_HouseVop.png" alt=""
+              /></a>
+              <a
+                target="_blank"
+                href="https://yurii-donnikov.github.io/project_construct/"
+                ><img src="./images/project_construct.png" alt=""
+              /></a>
+              <a
+                target="_blank"
+                href="https://yurii-donnikov.github.io/BarbershopMain/"
+                ><img src="./images/work1.png" alt=""
+              /></a>
+              <a
+                target="_blank"
+                href="https://yurii-donnikov.github.io/PhotoStudio/"
+                ><img src="./images/photoStudio.png" alt=""
+              /></a>
+            </div>
+            <h3>+ React</h3>
+            <div>
+              <a
+                target="_blank"
+                href="https://github.com/yurii-donnikov/summary_Taxi_park"
+                ><img src="./images/taxi.png" alt=""
+              /></a>
+              <a
+                target="_blank"
+                href="https://github.com/yurii-donnikov/summary_users"
+                ><img src="./images/users.png" alt=""
+              /></a>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="./dist/main.js"></script>
+  </body>
 </html>
