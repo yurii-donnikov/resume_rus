@@ -1,8 +1,5 @@
+import "../sass/all.scss";
 
-import "../sass/all.scss"
+import "./main.js";
 
-import "./main.js"
-
-import './jquery.js'
-
-
+import "./jquery.js";
